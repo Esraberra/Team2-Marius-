@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Team2-Marius-" />
         <module name="FrezeitPlaner" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Team2-Marius-" target="16" />
+    </bytecodeTargetLevel>
   </component>
 </project>
