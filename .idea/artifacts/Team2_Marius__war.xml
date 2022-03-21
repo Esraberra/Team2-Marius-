@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Team2-Marius-:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Team2-Marius-</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="simple-maven-web.war">
+      <element id="artifact" artifact-name="Team2-Marius-:war exploded" />
+    </root>
+  </artifact>
+</component>

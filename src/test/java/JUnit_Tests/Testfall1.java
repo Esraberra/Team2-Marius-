@@ -11,9 +11,7 @@ public void  liste_testen(){
     System.out.print("bin in den erstn Test" +
             "\n");
     System.out.print("bin in den erstn Test\n");
-    System.out.print("bin in den erstn Test\n");
-    System.out.print("bin in den erstn Test\n");
-    System.out.print("bin in den erstn Test\n");
+
 
 }
 
