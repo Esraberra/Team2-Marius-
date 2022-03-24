@@ -39,11 +39,11 @@ public class Testfall1 {
     }
     @Test
     public void GrenzwertTest2() {
-        assertEquals("Biergarten", new LeisureCalculator("Relax", "Sonne", "10").calculateLeisure());
+        assertEquals("Netflix und Lieferando", new LeisureCalculator("Relax", "Regen", "10").calculateLeisure());
     }
     @Test
     public void GrenzwertTest3() {
-        assertEquals("Biergarten", new LeisureCalculator("Relax", "Sonne", "19").calculateLeisure());
+        assertEquals("Glühwein trinken", new LeisureCalculator("Relax", "Schnee", "19").calculateLeisure());
     }
     @Test
     public void GrenzwertTest4() {
@@ -62,11 +62,11 @@ public class Testfall1 {
     //Grenzwert Äquivalenzklassen kombiniert
     @Test
     public void GrenzwertAequiTest1() {
-        assertEquals ("Picknick", new LeisureCalculator("Sport", "Sonne", "5").calculateLeisure());
+        assertEquals ("Wandern", new LeisureCalculator("Sport", "Sonne", "5").calculateLeisure());
     }
     @Test
     public void GrenzwertAequiTest2() {
-        assertEquals("Biergarten", new LeisureCalculator("Relax", "Sonne", "9").calculateLeisure());
+        assertEquals("Picknick", new LeisureCalculator("Relax", "Sonne", "9").calculateLeisure());
     }
     @Test
     public void GrenzwertAequiTest3() {
@@ -74,19 +74,19 @@ public class Testfall1 {
     }
     @Test
     public void GrenzwertAequiTest4() {
-        assertEquals("Biergarten 2.0", new LeisureCalculator("Sport", "Schnee", "15").calculateLeisure());
+        assertEquals("Biergarten", new LeisureCalculator("Sport", "Schnee", "15").calculateLeisure());
     }
     @Test
     public void GrenzwertAequiTest5() {
-        assertEquals ("Biergarten 2.0", new LeisureCalculator("Relax", "Sonne", "19").calculateLeisure());
+        assertEquals ("Biergarten", new LeisureCalculator("Relax", "Sonne", "19").calculateLeisure());
     }
     @Test
     public void GrenzwertAequiTest6() {
-        assertEquals("Besuch 5 Sterne Restaurant", new LeisureCalculator("Relax", "Sonne", "20").calculateLeisure());
+        assertEquals("Biergarten 2.0", new LeisureCalculator("Relax", "Sonne", "20").calculateLeisure());
     }
     @Test
     public void GrenzwertAequiTest7() {
-        assertEquals("Besuch 5 Sterne Restaurant", new LeisureCalculator("Relax", "Sonne", "50").calculateLeisure());
+        assertEquals("Biergarten 2.0", new LeisureCalculator("Relax", "Sonne", "50").calculateLeisure());
     }
     @Test
     public void GrenzwertAequiTest8() {

@@ -47,7 +47,7 @@ public class MatrixBuilder {
 
         //schnee relax
         tmpActivity[2][0][0] = "Schneemann bauen";
-        tmpActivity[2][0][1] = "Biergarten";
+        tmpActivity[2][0][1] = "Glühwein trinken";
         tmpActivity[2][0][2] = "Konzert gehen";
         tmpActivity[2][0][3] = "Besuch 5 Sterne Restaurant";
 
