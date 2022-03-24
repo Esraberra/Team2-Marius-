@@ -6,8 +6,10 @@ public class Main {
 
         //InputProcessing input = new InputProcessing();
 
-        String activity = new LeisureCalculator("", "warm sonnig", "10-20").calculateLeisure();
+        String activity = new LeisureCalculator("", "", "haallo").calculateLeisure();
         System.out.println(activity);
+        String activity2 = new LeisureCalculator("Relax", "Sonne", "10").calculateLeisure();
+        System.out.println(activity2);
     }
 
 }
