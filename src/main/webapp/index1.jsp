@@ -22,7 +22,7 @@
             <div class="navbar1">
 
 
-            Basierend auf deiner Auswahl: ${param.weather} raten wir dir zu folgendem:
+            Basierend auf deiner Auswahl: <%=request.getParameter("param")%> raten wir dir zu folgendem:
 
 
     </body>

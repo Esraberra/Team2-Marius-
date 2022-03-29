@@ -10,40 +10,76 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-//@WebServlet("/add")
+@WebServlet("/index.jsp")
 public class AddServlet extends HttpServlet {
+
+    String type;
+    String weather;
+    String cost;
 
     protected void doGet(HttpServletRequest request,
                          HttpServletResponse response) throws ServletException, IOException{
 
 
+
+        //response.getWriter().append("Served at: ").append(request.getContextPath());
+
+       //writer.println(type+ " " + weather + " " + cost);
+//        //response.setContentType("index.jsp");
+//        //RequestDispatcher requestDispatcher = request.getRequestDispatcher("/index.jsp");
+//        //requestDispatcher.include(request,response);
+//
+//
+//
+//        //request.setAttribute("type", type);
+//        //request.setAttribute("weather", weather);
+//        //request.setAttribute("cost", cost);
+//        writer.println(type + " " + weather + " " + cost );
     }
 
 
     protected void doPost(HttpServletRequest request,
                           HttpServletResponse response) throws ServletException, IOException {
 
+        PrintWriter writer = response.getWriter();
+        response.setContentType("text/html");
+        this.type = request.getParameter("type");
+        this.weather = request.getParameter("weather");
+        this.cost = request.getParameter("cost");
 
+
+        String calc = new LeisureCalculator(type, weather, cost).calculateLeisure();
+        String calc2 = new LeisureCalculator("Sport", "Sonne", "12").calculateLeisure();
+
+        writer.println(type + " " + weather + " " + cost);
+        //writer.println((type.length()));
+        writer.println(calc2);
+        writer.println(calc);
+        //String type = request.getParameter("type");
+        //String weather = request.getParameter("weather");
+
+        //System.out.println(type);
+        //System.out.println(weather);
         //String activity = new LeisureCalculator("", "", "haallo").calculateLeisure();
         //request.setAttribute("number", activity);
         //getServletContext().getRequestDispatcher("/index.jsp").forward(request,response);
-        String type = request.getParameter("type");
-        String weather = request.getParameter("weather");
-        String cost = request.getParameter("cost");
+        //doGet(request,response);
 
-        //String activity = new LeisureCalculator(type, weather, cost).calculateLeisure();
-        //request.setAttribute("error", "dff");
-        doGet(request,response);
-
-        response.setContentType("text/html");
-        String number = request.getParameter("number");
-
-        PrintWriter writer = response.getWriter();
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/index.jsp");
-        requestDispatcher.include(request,response);
-
-        request.setAttribute("number", number);
-        writer.println(type + " " + weather + " " + cost );
+//        response.setContentType("text/html");
+//
+//        String type = request.getParameter("type");
+//        String weather = request.getParameter("weather");
+//        String cost = request.getParameter("cost");
+//
+//
+//        PrintWriter writer = response.getWriter();
+//        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/index.jsp");
+//        requestDispatcher.include(request,response);
+//
+//        request.setAttribute("type", type);
+//        request.setAttribute("weather", weather);
+//        request.setAttribute("cost", cost);
+//        writer.println(type + " " + weather + " " + cost );
 
         //writer.println("Number is "+ activity);
         //writer.flush();

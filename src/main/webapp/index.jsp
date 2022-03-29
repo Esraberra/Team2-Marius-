@@ -20,9 +20,11 @@
                 <img src="banner.jpg" alt="Logo" width="400">
             </div>
             <div class="navbar1">
+            </div>
+            <div class="output">
+                Basierend auf deiner Auswahl: <%=request.getParameter("param.weather")%> raten wir dir zu folgendem:
+            </div>
 
-
-            Basierend auf deiner Auswahl: ${param.weather} raten wir dir zu folgendem:
 
 
     </body>

@@ -17,41 +17,35 @@
         </div>
     </div>
 
-    <div>
-        <form action="add" method="post" class="dropdown" id="activity">
 
-            <select name="weather" >
-                <option value="" disabled selected>Select your option</option>
-                <option value="Relax">Releax</option>
-                <option value="Sport">Sport</option>
-                <option value="Entertainment">Entertainment</option>
+    <form action="add" method="post">
+
+        <div>
+            <select name="type" class="dropdown" id="activity" >
+                <option name="type" value="" disabled selected>Select your option</option>
+                <option name="type" value="Relax">Releax</option>
+                <option name="type" value="Sport">Sport</option>
+                <option name="type" value="Entertainment">Entertainment</option>
             </select>
 
-        </form>
-    </div>
-    <div>
-        <form action="add" method="post" class="dropdown" id="wetter">
-
-            <select name="weather">
-                <option value="" disabled selected>Select your option</option>
-                <option value="Sonne">Sonne</option>
-                <option value="Regen">Regen</option>
-                <option value="Schnee">Schnee</option>
+        </div>
+        <div>
+            <select name="weather" class="dropdown" id="wetter">
+                <option name="weather" value="" disabled selected>Select your option</option>
+                <option name="weather" value="Sonne">Sonne</option>
+                <option name="weather" value="Regen">Regen</option>
+                <option name="weather" value="Schnee">Schnee</option>
             </select>
+        </div>
 
-        </form>
-    </div>
-    <div>
-        <form action="add" method="post" class="dropdown"  >
-            <input type="text" id="kosten" placeholder="Bitte maximale Kosten eingeben">
-        </form>
-    </div>
-    <div>
-        <form action="add" method="post" class="sub_btn" >
-            <input type="submit" id="submitButton" value="Zeige Aktivität"/>
-        </form>
-    </div>
+        <div>
+            <input type="text" name="cost" class="dropdown" id="kosten"  placeholder="Bitte maximale Kosten eingeben">
+        </div>
 
+        <div>
+            <input type="submit" class="sub_btn" id="submitButton" value="Zeige Aktivität"/>
+        </div>
+    </form>
 
     <div class="img">
         <img src="banner.jpg" alt="Logo" width="400">
@@ -59,7 +53,4 @@
     <div class="navbar1">
 
     </div>
-</div>
-
-
-
+</div
