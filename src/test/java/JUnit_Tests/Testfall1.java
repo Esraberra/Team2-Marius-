@@ -31,7 +31,6 @@ public class Testfall1 {
         assertEquals("Besuch 5 Sterne Restaurant", new LeisureCalculator("Relax", "Schnee", "112").calculateLeisure());
     }
 
-
     //Grenzwert-Bildung
     @Test
     public void GrenzwertTest1() {
@@ -114,4 +113,3 @@ public class Testfall1 {
     }
 
 }
-//Test
