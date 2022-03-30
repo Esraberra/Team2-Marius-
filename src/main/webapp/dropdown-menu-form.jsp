@@ -24,7 +24,7 @@
         <div>
             <select name="type" class="dropdown" id="activity" >
                 <option name="type" value="" disabled selected>Select your option</option>
-                <option name="type" value="Relax">Releax</option>
+                <option name="type" value="Relax">Relax</option>
                 <option name="type" value="Sport">Sport</option>
                 <option name="type" value="Entertainment">Entertainment</option>
             </select>
