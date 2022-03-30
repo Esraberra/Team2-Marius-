@@ -18,6 +18,11 @@ public class AddServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
         throws ServletException, IOException {
 
+
+
+        //writer.out.println(calc);
+
+
 //        PrintWriter writer = response.getWriter();
 //        //response.setContentType("text/html");
 //        String type = request.getParameter("type");
@@ -63,6 +68,32 @@ public class AddServlet extends HttpServlet {
 
         PrintWriter writer = response.getWriter();
         response.setContentType("text/html");
+
+        String type = request.getParameter("type");
+        String weather = request.getParameter("weather");
+        String cost = request.getParameter("cost");
+
+
+
+        String calc = new LeisureCalculator(type, weather, cost).calculateLeisure();
+        //String calc2 = new LeisureCalculator("Sport", "Sonne", "12").calculateLeisure();
+
+        //request.setAttribute("results", calc);
+        RequestDispatcher req = request.getRequestDispatcher("/dropdown-menu-form.jsp");
+        req.include(request,response);
+
+        //String connectString = new String();
+        String output = " id ='output'";
+        String connectString = "<div" + output + ">" + calc+ "</div>";
+
+
+        writer.println(connectString);
+
+
+        /*
+
+        PrintWriter writer = response.getWriter();
+        response.setContentType("text/html");
         String type = request.getParameter("type");
         String weather = request.getParameter("weather");
         String cost = request.getParameter("cost");
@@ -77,7 +108,7 @@ public class AddServlet extends HttpServlet {
         writer.println(calc);
         System.out.println(calc);
 
-
+*/
 
 
 

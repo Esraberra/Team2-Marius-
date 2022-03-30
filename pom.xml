@@ -46,7 +46,7 @@
     <build>
 
         <plugins>
-            <!-- Jetty Plugin. Default port is 8080 -->
+            <!-- Jetty Plugin. Default port is 3131 -->
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>

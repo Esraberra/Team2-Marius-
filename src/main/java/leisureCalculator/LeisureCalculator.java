@@ -32,11 +32,11 @@ public class LeisureCalculator {
 
         activity = "Fehler, leider können wir dir für deine Bedürfnisse keine Vorschläge machen :(";
 
-        if (activityType.isEmpty() && weather.isEmpty() && cost.isEmpty()){
+        if (activityType == null && weather == null && cost.isEmpty()){
             return "Komm gib dir Mühe!";
         }
 
-        if (!cost.isEmpty()) {
+        if (!(cost.isEmpty())) {
             try {
                 this.costCalculate = Integer.parseInt(cost);
                 System.out.println(cost); //debug
@@ -59,8 +59,8 @@ public class LeisureCalculator {
         }
 
         System.out.println("Test " + activityType);
-        if (activityType.isEmpty()) {
-            System.out.println(activityType); //debug
+        if (activityType == null ) {
+            //System.out.println(activityType); //debug
             Random rand = new Random();
             activityIndex = rand.nextInt(2);
         } else if (activityType.equals("Relax")) {
@@ -72,7 +72,7 @@ public class LeisureCalculator {
             activityIndex = 2;
         }
 
-        if (weather.isEmpty()) {
+        if (weather == null) {
             Random rand = new Random();
             weatherIndex = rand.nextInt(2);
         } else if (weather.equals("Sonne")) {
