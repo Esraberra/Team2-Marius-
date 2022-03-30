@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background: url(ranger-4df6c1b6.png);
+    height :70vh;
+    background-size: 100% 100%;
+
+
+}
+body {
+    background: -webkit-linear-gradient(to right, #08ff46 0%, #11a3ad, #4a17d4);
+    background: linear-gradient(to right,#08ff46 0%, #11a3ad, #4a17d4);
+}
+
+#output{
+
+    margin-left: 50px;
+    font-size: 100px;
+    font-weight: bolder;
+    color: black;
+    background: -webkit-linear-gradient(to right, #08ff46 0%, #11a3ad, #4a17d4);
+    background: linear-gradient(to right,#08ff46 0%, #11a3ad, #4a17d4);
+}
+
+select {
+    position: relative;
+    margin-top: 25px;
+    margin-left: 50px;
+    width: 25%;
+    padding:10px;
+    border-radius: 10px;
+    background: #d6a37c;
+}
+
+input {
+    position: relative;
+    margin-top: 25px;
+    margin-left: 50px;
+    width: 25%;
+    padding:10px;
+    border-radius: 10px;
+
+}
+
+#kosten{
+    background: #d6a37c;
+}
+
+#submitButton{
+     background: -webkit-linear-gradient(to right, #08ff46 0%, #11a3ad, #4a17d4);
+     background: linear-gradient(to right,#08ff46 0%, #11a3ad, #4a17d4);
+
+}
+
+.container.navbar{
+    width: 100%;
+    height: 80px;
+    background: rgba(22,112,214,0.4);
+}
+.img img{
+    width: 600px;
+    height: 300px;
+    padding: 20px;
+    position: absolute;
+   
+    top: 60%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -150px;
+}
+.navbar .logo{
+
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.navbar .logo a{
+
+    background: repeating-radial-gradient(black, black 5px, red 5px, red 10px);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+    font-size: 100px;
+    font-weight: bold;
+
+}
+
+.navbar1 ul{
+    float: right;
+    margin-right: 20px;
+
+}
+.navbar1 ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+.navbar1 ul li button{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: Roboto;
+}
+.navbar1 ul li #btn{
+    background: #ff6e00;
+    border: radius 2px;
+}
+.navbar1 ul li #type{
+    background: #d6a37c;
+    border: radius 2px;
+ 
+    text-decoration: none;
+    font-size: 15px;
+    padding: 6px 10px;
+    font-family: Roboto;
+}
+.navbar1 ul li #wetter{
+    background: #d6a37c;
+    border: radius 2px;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 6px 10px;
+    font-family: Roboto;
+}
+.navbar1 ul li #kosten{
+    background: #d6a37c;
+    border: radius 2px;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 6px 10px;
+    font-family: Roboto;
+}
+
+

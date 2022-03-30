@@ -33,7 +33,7 @@ public class LeisureCalculator {
         activity = "Fehler, leider können wir dir für deine Bedürfnisse keine Vorschläge machen :(";
 
         if (activityType == null && weather == null && cost.isEmpty()){
-            return "Komm gib dir Mühe!";
+            return "Komm, gib dir Mühe!";
         }
 
         if (!(cost.isEmpty())) {
