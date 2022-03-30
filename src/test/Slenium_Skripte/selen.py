@@ -3,7 +3,7 @@ from time import sleep
 
 driver = webdriver.Chrome()
 
-driver.get('http://127.0.0.1:5500/Plan.html') # URL wird mithilfe Live Server generiert
+driver.get('http://localhost:3131/dropdown-menu-form.jsp') # URL wird mithilfe Live Server generiert
 
 element = driver.find_element_by_id("type")
 element.click()
