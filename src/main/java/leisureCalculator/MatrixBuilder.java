@@ -25,7 +25,7 @@ public class MatrixBuilder {
         tmpActivity[0][2][0] = "Sterne gucken";
         tmpActivity[0][2][1] = "Autokino";
         tmpActivity[0][2][2] = "Konzert gehen";
-        tmpActivity[0][2][3] = "Ballet";
+        tmpActivity[0][2][3] = "Ballett";
 
         //regen relax
         tmpActivity[1][0][0] = "Netflix";
@@ -68,6 +68,7 @@ public class MatrixBuilder {
 
 
     public String getActivity(int weather, int activity, int cost) {
+
         return tmpActivity[weather][activity][cost];
     }
 }

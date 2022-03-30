@@ -17,6 +17,7 @@ public class LeisureCalculator {
         this.activityType = activityType;
         this.weather = weather;
         this.cost= cost;
+        System.out.println(this.activityType + " " +  this.weather + " " + this.cost); //debug
         matrix = new MatrixBuilder();
 
     }
@@ -38,11 +39,13 @@ public class LeisureCalculator {
         if (!cost.isEmpty()) {
             try {
                 this.costCalculate = Integer.parseInt(cost);
+                System.out.println(cost); //debug
            }catch (NumberFormatException e) {
                 return "Sorry Bro, viel Glück beim nächsten Mal";
             }
         } else {
             costCalculate = 0;
+            System.out.println("costcalculate = 0"); //debug
         }
 
         if (costCalculate >= 0 && costCalculate < 10 ) {
@@ -55,25 +58,29 @@ public class LeisureCalculator {
             costIndex = 3;
         }
 
+        System.out.println("Test " + activityType);
         if (activityType.isEmpty()) {
+            System.out.println(activityType); //debug
             Random rand = new Random();
             activityIndex = rand.nextInt(2);
-        } else if (activityType == "Relax") {
+        } else if (activityType.equals("Relax")) {
             activityIndex = 0;
-        } else if (activityType == "Sport") {
+        } else if (activityType.equals("Sport")) {
+            System.out.println(activityType); //Debug
             activityIndex = 1;
-        } else if (activityType == "Entertainment"){
+        } else if (activityType.equals("Entertainment")){
             activityIndex = 2;
         }
 
         if (weather.isEmpty()) {
             Random rand = new Random();
             weatherIndex = rand.nextInt(2);
-        } else if (weather == "Sonne") {
+        } else if (weather.equals("Sonne")) {
             weatherIndex = 0;
-        } else if (weather == "Regen") {
+        //} else if (weather == "Regen") {
+        } else if (weather.equals("Regen")) {
             weatherIndex = 1;
-        } else if (weather == "Schnee"){
+        } else if (weather.equals("Schnee")) {
             weatherIndex = 2;
         }
         if (weatherIndex == 4 || costIndex == 4 || activityIndex == 4) {

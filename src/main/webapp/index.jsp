@@ -25,7 +25,11 @@
                 Basierend auf deiner Auswahl: <%=request.getParameter("param.weather")%> raten wir dir zu folgendem:
             </div>
 
-
+        <div>
+            <span>
+                <%=request.getParameter("results")%>
+            </span>
+        </div>
 
     </body>
 

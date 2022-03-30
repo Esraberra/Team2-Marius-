@@ -2,6 +2,8 @@ package leisureCalculator;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.LinkedList;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -10,12 +12,30 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/index.jsp")
+//@WebServlet("/index.jsp")
 public class AddServlet extends HttpServlet {
 
-    String type;
-    String weather;
-    String cost;
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+        throws ServletException, IOException {
+
+//        PrintWriter writer = response.getWriter();
+//        //response.setContentType("text/html");
+//        String type = request.getParameter("type");
+//        String weather = request.getParameter("weather");
+//        String cost = request.getParameter("cost");
+//
+//        String calc = new LeisureCalculator(type, weather, cost).calculateLeisure();
+//        //String calc2 = new LeisureCalculator("Sport", "Sonne", "12").calculateLeisure();
+//        List list = new LinkedList();
+//        if(calc.length()==0) {
+//            list.add(calc);
+//        }
+//
+//        request.setAttribute("results", list);
+//        request.getRequestDispatcher("/dropdown-menu-form.jsp").forward(request, response);
+        //System.out.println(calc);
+
+    }
 
     protected void doGet(HttpServletRequest request,
                          HttpServletResponse response) throws ServletException, IOException{
@@ -43,18 +63,31 @@ public class AddServlet extends HttpServlet {
 
         PrintWriter writer = response.getWriter();
         response.setContentType("text/html");
-        this.type = request.getParameter("type");
-        this.weather = request.getParameter("weather");
-        this.cost = request.getParameter("cost");
+        String type = request.getParameter("type");
+        String weather = request.getParameter("weather");
+        String cost = request.getParameter("cost");
+
 
 
         String calc = new LeisureCalculator(type, weather, cost).calculateLeisure();
-        String calc2 = new LeisureCalculator("Sport", "Sonne", "12").calculateLeisure();
+        //String calc2 = new LeisureCalculator("Sport", "Sonne", "12").calculateLeisure();
 
-        writer.println(type + " " + weather + " " + cost);
-        //writer.println((type.length()));
-        writer.println(calc2);
+        //request.setAttribute("results", calc);
+        //request.getRequestDispatcher("/dropdown-menu-form.jsp").forward(request, response);
         writer.println(calc);
+        System.out.println(calc);
+
+
+
+
+
+
+
+
+        //writer.println((type.length()));
+        //writer.println(calc2);
+        //writer.println(calc);
+        //System.out.println(calc);
         //String type = request.getParameter("type");
         //String weather = request.getParameter("weather");
 

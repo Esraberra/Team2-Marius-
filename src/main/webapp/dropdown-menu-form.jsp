@@ -1,3 +1,4 @@
+
 <html>
 
 <head>
@@ -43,17 +44,10 @@
         </div>
 
         <div>
-            <input type="submit" class="sub_btn" id="submitButton" value="Zeige Aktivität"/>
+            <input type="submit" class="sub_btn" id="submitButton" value="Was mach ich nur?"/>
         </div>
     </form>
-    <div>
-        <span>
-            <%=request.getParameter("results.calc")%>
-        </span>
-    </div>
-    <div>
-        <p>hjskdhfjsdhfjksdahfjkdhsfjhsadfj</p>
-    </div>
+
 
     <div class="img">
         <img src="banner.jpg" alt="Logo" width="400">
