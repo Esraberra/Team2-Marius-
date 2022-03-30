@@ -19,7 +19,7 @@ body {
 #output{
 
     margin-left: 50px;
-    font-size: 100px;
+    font-size: 60px;
     font-weight: bolder;
     color: black;
     background: -webkit-linear-gradient(to right, #08ff46 0%, #11a3ad, #4a17d4);
