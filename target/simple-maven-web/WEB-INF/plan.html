@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freizeitplanung-Calculator</title>
+    <link rel="stylesheet" href="plan.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Freizeitplaner</a>
+        </div>
+    </div>
+
+    <div class="Ausgabe">
+        <span>Hier kommt die Ausgabe</span>
+    </div>
+    <div class="navbar1">
+
+        <ul>
+
+            <li>
+                <select class="checkbox" id="type" required>
+                    <option value="Aktivitaetsform" class="low_visible">--Bitte auswählen--</option>
+                    <option value="sport" class="value_bold" >Sport</option>
+                    <option value="relax" class="value_bold">Relax</option>
+                    <option value="entertainment" class="value_bold">Entertainment</option>
+                </select>
+            </li>
+            <li>  <select class="checkbox" id="wetter">
+                <option value="Wetter">--Bitte auswählen--</option>
+                <option value="sk" class="value_bold">sonnig kalt</option>
+                <option value="sw" class="value_bold">sonnig warm</option>
+                <option value="rk" class="value_bold">regnerisc kalt</option>
+                <option value="rw" class="value_bold">regnerisch warm</option>
+            </select>
+            </li>
+            <li>
+
+
+                <select class="checkbox" id="kosten">
+                    <option value="Kosten">--Bitte auswählen--</option>
+                    <option value="to10" class="value_bold">0 - 10 Euro</option>
+                    <option value="to20" class="value_bold">10 - 20 Euro</option>
+                    <option value="to50" class="value_bold">20 - 50 Euro</option>
+                    <option value="50plus" class="value_bold">50+ Euro</option>
+                </select>
+            </li>
+
+            <li>  <button id="btn" class="active">Calculate</button>   </li>
+        </ul>
+
+    </div>
+</div>
+
+</body>
+</html>
