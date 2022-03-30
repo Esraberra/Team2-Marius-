@@ -1,7 +1,7 @@
 from selenium import webdriver
 from time import sleep
 
-driver = webdriver.Chrome()
+driver = webdriver.Firefox()
 
 driver.get('http://localhost:3131/dropdown-menu-form.jsp') # URL wird mithilfe Live Server generiert
 
