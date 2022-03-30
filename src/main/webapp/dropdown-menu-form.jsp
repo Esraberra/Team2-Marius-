@@ -49,10 +49,5 @@
     </form>
 
 
-    <div class="img">
-        <img src="banner.jpg" alt="Logo" width="400">
-    </div>
-    <div class="navbar1">
-
     </div>
 </div>
