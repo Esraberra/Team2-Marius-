@@ -81,7 +81,13 @@ public class AddServlet extends HttpServlet {
         //request.setAttribute("results", calc);
         RequestDispatcher req = request.getRequestDispatcher("/dropdown-menu-form.jsp");
         req.include(request,response);
-        writer.println(calc);
+
+        //String connectString = new String();
+        String output = " id ='output'";
+        String connectString = "<div" + output + ">" + calc+ "</div>";
+
+
+        writer.println(connectString);
 
 
         /*
