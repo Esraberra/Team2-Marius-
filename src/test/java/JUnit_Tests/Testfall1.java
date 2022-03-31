@@ -99,10 +99,10 @@ public class Testfall1 {
     public void GrenzwertAequiTest10() {
         assertEquals("Besuch 5 Sterne Restaurant", new LeisureCalculator("Relax", "Sonne", "200").calculateLeisure());
     }
-   // @Test
-   // public void GrenzwertAequiTestKeineEIngabe() {
-     //   assertEquals("Komm gib dir Mühe!", new LeisureCalculator("", "", "").calculateLeisure());
-    //}
+    @Test
+    public void GrenzwertAequiTestKeineEIngabe() {
+        assertEquals("Komm gib dir Mühe!", new LeisureCalculator("", "", "").calculateLeisure());
+    }
     @Test
     public void GrenzwertAequiTestFalschesFormat() {
         assertEquals("Sorry Bro, viel Glück beim nächsten Mal", new LeisureCalculator("", "", "dsgjsahdl").calculateLeisure());

@@ -60,7 +60,7 @@ public class MatrixBuilder {
         //schnee entertainment
         tmpActivity[2][2][0] = "Twitch";
         tmpActivity[2][2][1] = "Kino";
-        tmpActivity[2][2][2] = "Theater";
+        tmpActivity[2][2][2] = "Theater"; //Live Test Änderung
         tmpActivity[2][2][3] = "Sorry keine Idee";
 
 

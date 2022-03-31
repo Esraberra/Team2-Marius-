@@ -6,15 +6,23 @@
 }
 .container{
     background: url(ranger-4df6c1b6.png);
-    height :100vh;
+    height :70vh;
     background-size: 100% 100%;
 
 
 }
+body {
+    background: -webkit-linear-gradient(to right, #08ff46 0%, #11a3ad, #4a17d4);
+    background: linear-gradient(to right,#08ff46 0%, #11a3ad, #4a17d4);
+}
 
-.output{
-    font-color:red;
-    font-size: 50px
+#output{
+    margin-left: 50px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: black;
+    background: -webkit-linear-gradient(to right, #08ff46 0%, #11a3ad, #4a17d4);
+    background: linear-gradient(to right,#08ff46 0%, #11a3ad, #4a17d4);
 }
 
 select {
