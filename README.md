@@ -3,19 +3,18 @@ Projekt : WebAnwendungen " FreizietPlanner"
 --------------------------------------------------
 Tools : GitHub, intelIJ, Jenkins ,Junit5, Selenium
 --------------------------------------------------
-Sprachen
 --------------------------------------------------
-Team :
+DevOps_Team :
 ------
-Ahmed :
+Ahmed 
 ------
-Cyriane-Ines :
+Cyriane-Ines 
 ------
-Esra :
+Esra 
 ------
-Jarno  :
+Jarno 
 ------
-Mohamed : 
+Mohamed  
 ------
-Marius /
+Marius 
 ---------------------------------------------------
