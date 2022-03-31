@@ -37,7 +37,7 @@ def test_pytest1():
     logging.info("Submited")
 
     element = driver.find_element(By.ID, "output")
-    assert "Biergarten" == element.text
+    assert "Kino" == element.text
 
 def test_pytest2():
 
