@@ -35,6 +35,10 @@ def test_pytest1():
     element = driver.find_element(By.ID, "submitButton")
     element.click()
     logging.info("Submited")
+
+    element = driver.find_element(By.ID, "output")
+    assert "Biergarten" == element.text
+
 def test_pytest2():
 
     driver = webdriver.Chrome()
@@ -65,11 +69,16 @@ def test_pytest2():
     element.click()
     logging.info("Submited")
 
+##    element = driver.find_element(By.ID, "output")
+##    assert "GoKart" == element.text
+
 def test_pytest3():
 
     driver = webdriver.Chrome()
 
+
     driver.get('http://localhost:3131/dropdown-menu-form.jsp') # URL wird mithilfe Live Server generiert
+    driver.maximize_window()
     logging.info("Open autmationpractice")
 
     element = driver.find_element(By.ID, "activity")
@@ -95,6 +104,7 @@ def test_pytest3():
     element.click()
     logging.info("Submited")
 
+    element = driver.find_element(By.ID, "output")
+    assert "Theater" == element.text
 
 
-    ## driver.quit()
