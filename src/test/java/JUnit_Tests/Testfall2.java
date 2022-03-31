@@ -9,7 +9,7 @@ public class Testfall2 {
 
     @Test
     public void AeqiuvalenzklassenTest1() {
-        //assertEquals ("Picknick", new LeisureCalculator("Relax", "Sonne", "5").calculateLeisure());
-        assertEquals ("Kino", new LeisureCalculator("Relax", "Sonne", "5").calculateLeisure());
+        assertEquals ("Picknick", new LeisureCalculator("Relax", "Sonne", "5").calculateLeisure());
+        //assertEquals ("Kino", new LeisureCalculator("Relax", "Sonne", "5").calculateLeisure());
     }
 }
